@@ -1,0 +1,14 @@
+<securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+  <disableSignup>true</disableSignup>
+  <enableCaptcha>false</enableCaptcha>
+  <users>
+    <user>
+      <id>${JENKINS_USER}</id>
+      <password>${JENKINS_PASS}</password>
+      <fullName>Admin</fullName>
+    </user>
+  </users>
+</securityRealm>
+<authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy">
+  <denyAnonymousReadAccess>true</denyAnonymousReadAccess>
+</authorizationStrategy>
