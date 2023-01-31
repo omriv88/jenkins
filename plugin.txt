@@ -1,0 +1,3 @@
+pipeline-model-definition
+docker-workflow
+jenkins-cli
