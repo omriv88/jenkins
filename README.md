@@ -1,5 +1,5 @@
 # jenkins
-deploy jenkins with 2 pipeline job on docker
+deploy jenkins with 2 jobs. 1 freestyle job it run on every pull request in the gitgub and run antoher pipeline jobs that run python script on the server When freestyle job is running
 
 
 * 1 - run the container 
