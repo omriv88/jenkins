@@ -1,14 +1,25 @@
 import jenkins.model.*
 import hudson.model.*
 
-def jenkins = Jenkins.getInstance()
+def instance = Jenkins.getInstance()
 
-def pipelineJob = jenkins.createProject(WorkflowJob, "pipeline-demo")
-pipelineJob.definition = new CpsFlowDefinition('''
-    node {
-        stage('Hello World') {
-            echo 'Hello World!'
-        }
+def job = instance.createProject(WorkflowJob, "pipeline-job")
+job.addTrigger(TimerTrigger("H/5 * * * *"))
+job.definition = new CpsFlowDefinition(
+  """
+  node {
+    stage("Build") {
+      echo "Building..."
     }
-''', true)
-pipelineJob.save()
+    stage("Test") {
+      echo "Testing..."
+    }
+    stage("Deploy") {
+      echo "Deploying..."
+    }
+  }
+  """,
+  true
+)
+job.save()
+
