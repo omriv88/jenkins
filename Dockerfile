@@ -2,8 +2,8 @@
 FROM jenkins/jenkins:lts
 
 
-ENV JENKINS_USER=admin \
-    JENKINS_PASS=admin
+ENV JENKINS_USER="admin"
+ENV JENKINS_PASS="admin"
 
 
 COPY config.xml /usr/share/jenkins/ref/config.xml
