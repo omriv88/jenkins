@@ -2,15 +2,23 @@
 FROM jenkins/jenkins:lts
 
 
-ENV JENKINS_USER="admin"
-ENV JENKINS_PASS="admin"
+USER root
+RUN apt-get -y update
 
 
-COPY config.xml /usr/share/jenkins/ref/config.xml
+
+ENV JENKINS_USER=admini
+ENV JENKINS_PASS=password
 
 
-COPY pipeline.groovy /usr/share/jenkins/ref/init.groovy.d/pipeline.groovy
+ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 
+RUN jenkins-plugin-cli \
+    --plugins \
+    git \
+    github \
+    workflow-aggregator \
+    ssh-slaves
 
-RUN /usr/local/bin/install-plugins.sh pipeline-model-definition \
-    && echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
+COPY jenkins.yml /var/jenkins_home/jenkins.yml
+COPY config.xml /var/jenkins_home/config.xml
