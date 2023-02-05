@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git clone "https://github.com/omriv88/deploy-jenkins-jobs.git"
-cp /root/test/jenkins/deploy-jenkins-jobs/* /root/test/jenkins/
+cp ./deploy-jenkins-jobs/* ./
 
 docker build -t myjenkins .
 
