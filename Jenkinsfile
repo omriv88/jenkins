@@ -11,7 +11,7 @@ pipeline {
         }
                 stage('tun Python script') {
             steps {
-                sh 'echo 'Devops is great'
+                sh 'echo "Devops is great"'
             }
         }
     }
