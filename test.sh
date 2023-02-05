@@ -1,5 +1,5 @@
 #!/bin/bash
-curl --insecure http://localhost/jnlpJars/jenkins-cli.jar --output jenkins-cli.jar
+curl --insecure http://54.160.65.219:8080/jnlpJars/jenkins-cli.jar --output jenkins-cli.jar
 chmod +x jenkins-cli.jar
-java -jar jenkins-cli.jar -s http://localhost:8080 -auth admin:admin -webSocket create-job "Run Python Script when any pull requests in github" < pipeline.xml
-java -jar jenkins-cli.jar -s http://localhost:8080 -auth admin:admin -webSocket create-job "test2" < test2.xml
+java -jar jenkins-cli.jar -s http://54.160.65.219:8080 -webSocket create-job "pull request demo" < freestyle-job.xml
+java -jar jenkins-cli.jar -s http://54.160.65.219:8080 -webSocket create-job "pipeline" < pipeline-job.xml
