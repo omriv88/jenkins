@@ -11,7 +11,7 @@ pipeline {
         }
                 stage('tun Python script') {
             steps {
-                sh 'python3 --version'
+                sh 'echo 'Devops is great'
             }
         }
     }
