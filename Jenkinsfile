@@ -10,7 +10,7 @@ pipeline {
         }
                 stage('tun Python script') {
             steps {
-                sh 'python main.py'
+                sh 'python3 --version'
             }
         }
     }
