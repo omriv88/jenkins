@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('check the repositories git pull') {
             steps {
-                sh 'https://github.com/omriv88/jenkins.git'
+                sh 'git clone https://github.com/omriv88/jenkins.git'
                 sh 'ls -l'
             }
         }
                 stage('tun Python script') {
             steps {
-                sh 'python main.py'
+                sh 'pwd'
             }
         }
     }
