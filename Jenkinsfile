@@ -10,7 +10,7 @@ pipeline {
         }
                 stage('tun Python script') {
             steps {
-                sh 'pwd'
+                sh 'python main.py'
             }
         }
     }
