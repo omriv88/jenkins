@@ -1,5 +1,6 @@
 # Deploy jenkins and jobs 
-deploy jenkins with 2 jobs. first job is called "Run Python Script when any pull requests in github" its a freestyle job it run every pull request in the github and run antoher pipeline jobs is called "test2" job. that run python script on the server When freestyle job is running
+setup.sh script that build and run docker image on container and deploy 2 jenkins jobs - the first job is freestyle job that get any pull request from github and build antoher pipeline job - that run python file and print " Devops is great"
+
 
 
 * 1 - clone the repository 
