@@ -1,6 +1,7 @@
 # Deploy jenkins and jobs 
-setup.sh script that build and run docker image on container and deploy 2 jenkins jobs - the first job is freestyle job that get any pull requests from github and build antoher pipeline job - that run python script and print " Devops is great"
-
+setup.sh script build and run docker image on container using Dockerfile and docker-compose and deploy 2 jenkins jobs - 
+the first job is freestyle job this job getting any pull requests from github and build antoher pipeline job - 
+the pipeline job runing python script called main.py that print "Devops is great" using Jenkinsfile
 
 
 * 1 - clone the repository 
