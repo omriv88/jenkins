@@ -5,5 +5,5 @@ deploy jenkins with 2 jobs. first job is called "Run Python Script when any pull
 * 1 - clone the repository 
 
 
-* 2 - run the play.sh script
+* 2 - run the setup.sh script
 
