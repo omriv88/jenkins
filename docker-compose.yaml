@@ -1,7 +1,7 @@
 version: '3'
-services:
+services: 
   jenkins:
     image: myjenkins
     ports:
       - "8080:8080"
-      - "50000:50000"
+      - "50000:50000" 
