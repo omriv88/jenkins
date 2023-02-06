@@ -7,9 +7,7 @@ cp ./deploy-jenkins-jobs/* ./
 #Build
 docker build -t myjenkins .
 
-#Run
+#Deploy
 sudo /usr/local/bin/docker-compose -f "./docker-compose.yaml" up -d
 sleep 45s
-
-#Deploy jobs
 bash  test.sh
