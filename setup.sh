@@ -9,5 +9,4 @@ docker build -t myjenkins .
 
 #Deploy
 sudo /usr/local/bin/docker-compose -f "./docker-compose.yaml" up -d
-sleep 45s
-bash  test.sh
+bash  tester.sh
