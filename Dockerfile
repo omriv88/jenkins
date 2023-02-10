@@ -16,4 +16,4 @@ COPY config.xml /var/jenkins_home/config.xml
 USER root
 COPY run.sh /home/run.sh
 RUN chmod +x /home/run.sh
-RUN sh -c "/home/run.sh"
+RUN bash -c "/home/run.sh"
