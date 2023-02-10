@@ -13,7 +13,7 @@ RUN jenkins-plugin-cli \
 
 COPY jenkins.yml /var/jenkins_home/jenkins.yml
 COPY config.xml /var/jenkins_home/config.xml
-#USER root
-#COPY run.sh /home/run.sh
-#RUN chmod +x /home/run.sh
-#RUN sh -c "/home/run.sh"
+USER root
+COPY run.sh /home/run.sh
+RUN chmod +x /home/run.sh
+RUN sh -c "/home/run.sh"
