@@ -1,4 +1,3 @@
-
 FROM jenkins/jenkins:lts
 USER root
 RUN apt-get -y update
@@ -11,10 +10,10 @@ RUN jenkins-plugin-cli \
     github \
     workflow-aggregator \
     ssh-slaves
-    
+
 COPY jenkins.yml /var/jenkins_home/jenkins.yml
 COPY config.xml /var/jenkins_home/config.xml
+USER root
 COPY run.sh /home/run.sh
-RUN mkdir /var/jenkins_home/jobs
 RUN chmod +x /home/run.sh
-RUN bash -c "/home/run.sh"
+RUN sh -c "/home/run.sh"
