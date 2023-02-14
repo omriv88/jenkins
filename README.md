@@ -22,15 +22,22 @@ setup.sh script build and runing jenkins on docker via Dockerfile and Docker-com
 ![image](https://user-images.githubusercontent.com/113102456/218678967-64cecd7f-1dde-4f82-9ff0-d1611e6d7982.png)
 * Docker-compoe file:
 ![image](https://user-images.githubusercontent.com/113102456/218679219-af3092bb-df99-4d4c-9a64-faef08e5c76a.png)
+
 and runing another scirpt that call tester.sh:
+
 * tester.sh script:
 ![image](https://user-images.githubusercontent.com/113102456/218679435-2987b905-a3f0-4dfd-90bd-9960ee227116.png)
+
 tester.sh script checks when the URL of the Jenkins server is available
 If the Url of the jenkins server is available, the script runs another script called test.sh.
+
 * test.sh script:
+
 ![image](https://user-images.githubusercontent.com/113102456/218681595-5e83c730-8482-438e-b9a2-76eeac7bff39.png)
+
 the test.sh downloads from the Jenkins server jenkins-cli.jar file, and builds 2 jobs via XML file 
 the first job call "pull request demo1" 
+
 * pull request demo1 - Console output:
 ![image](https://user-images.githubusercontent.com/113102456/218683222-c0d7b68e-49e1-410c-951c-025efeedc49c.png)
 
