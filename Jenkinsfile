@@ -11,7 +11,7 @@ pipeline {
         }
                 stage('run Python script') {
             steps {
-                sh 'python3 main.py'
+                sh 'echo "Devops is great"'
             }
         }
     }
