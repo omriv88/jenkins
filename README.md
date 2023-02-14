@@ -54,7 +54,7 @@ the pipeline jobs runing main.py script via Jenkinsfile
 
 
 
-# Run the Jenkins
+$ Run the Jenkins
 
 * 1 - git clone https://github.com/omriv88/jenkins.git
 
