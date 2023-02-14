@@ -22,7 +22,11 @@ setup.sh script build and runing jenkins on docker via Dockerfile and Docker-com
 ![image](https://user-images.githubusercontent.com/113102456/218678967-64cecd7f-1dde-4f82-9ff0-d1611e6d7982.png)
 * Docker-compoe file:
 ![image](https://user-images.githubusercontent.com/113102456/218679219-af3092bb-df99-4d4c-9a64-faef08e5c76a.png)
-and runing another scirpt that call tester.sh script, this script check when the jenkins url is runing and runing.
+and runing another scirpt that call tester.sh:
+* tester.sh script:
+![image](https://user-images.githubusercontent.com/113102456/218679435-2987b905-a3f0-4dfd-90bd-9960ee227116.png)
+
+script, this script check when the jenkins url is runing and runing.
 if the jenkins url is in status 200 its runing another script that call test.sh
 the test.sh script download jenkins-cli.jar file from jenkins server and build two jobs via xml file .
 the first job call "pull request demo1" that jobs getting any pull request from github specific repository and build another job that call "pipeline"
