@@ -30,7 +30,7 @@ the first job call "pull request demo1"
 * pull request demo1 job - Console output:
 ![image](https://user-images.githubusercontent.com/113102456/218683222-c0d7b68e-49e1-410c-951c-025efeedc49c.png)
 
-that jobs getting any pull request from github specific repository and build another job that call "pipeline"
+that jobs getting any pull request from github specific repository and trigger another job that call "pipeline"
 
 * pipeline job - Console output:
 
