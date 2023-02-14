@@ -27,7 +27,7 @@ and runs another script called test.sh.
 
 ![image](https://user-images.githubusercontent.com/113102456/218681595-5e83c730-8482-438e-b9a2-76eeac7bff39.png)
 
-the test.sh downloads from the Jenkins server jenkins-cli.jar file, and builds 2 jobs via XML file 
+the test.sh downloads from the Jenkins server jenkins-cli.jar file, and builds 2 jobs via XML file, 
 the first job call "pull request demo1" 
 
 * pull request demo1 job - Console output:
