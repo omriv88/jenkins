@@ -16,12 +16,12 @@ setup.sh script build and run Jenkins server on container, the jenkins server wi
 
 
 setup.sh script build and runing jenkins on docker via Dockerfile and Docker-compose
-*setup.sh script:
+* setup.sh script:
 ![image](https://user-images.githubusercontent.com/113102456/218678901-2e94aa89-44ac-4d4e-9f99-e0666eba381f.png)
-*Dockerfile:
+* Dockerfile:
 ![image](https://user-images.githubusercontent.com/113102456/218678967-64cecd7f-1dde-4f82-9ff0-d1611e6d7982.png)
-Docker-compoe file:
-![image](https://user-images.githubusercontent.com/113102456/218678678-bf0d223e-8141-4e4c-b19f-6360a04c544a.png)
+* Docker-compoe file:
+![image](https://user-images.githubusercontent.com/113102456/218679219-af3092bb-df99-4d4c-9a64-faef08e5c76a.png)
 and runing another scirpt that call tester.sh script, this script check when the jenkins url is runing and runing.
 if the jenkins url is in status 200 its runing another script that call test.sh
 the test.sh script download jenkins-cli.jar file from jenkins server and build two jobs via xml file .
