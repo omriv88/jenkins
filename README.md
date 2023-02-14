@@ -1,6 +1,3 @@
-
-# Jenkins
-
 # Summary
 * provide a running Jenkins server, that will initiate a python job on any github merge request
 
@@ -54,7 +51,7 @@ the pipeline jobs runing main.py script via Jenkinsfile
 
 
 
-$ Run the Jenkins
+# Run the Jenkins
 
 * 1 - git clone https://github.com/omriv88/jenkins.git
 
