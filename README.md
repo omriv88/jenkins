@@ -4,15 +4,13 @@
 
 # Description
 
-the setup.sh script build and runing jenkins on docker via Dockerfile and Docker-compose
+the setup.sh script build and runing jenkins on docker via Dockerfile and Docker-compose and runing another scirpt that call tester.sh
 * setup.sh script:
 ![image](https://user-images.githubusercontent.com/113102456/218678901-2e94aa89-44ac-4d4e-9f99-e0666eba381f.png)
 * Dockerfile:
 ![image](https://user-images.githubusercontent.com/113102456/218678967-64cecd7f-1dde-4f82-9ff0-d1611e6d7982.png)
 * Docker-compoe file:
 ![image](https://user-images.githubusercontent.com/113102456/218679219-af3092bb-df99-4d4c-9a64-faef08e5c76a.png)
-
-and runing another scirpt that call tester.sh:
 
 * tester.sh script:
 ![image](https://user-images.githubusercontent.com/113102456/218689729-ae405c2f-7d06-4013-929e-9b9e3828c9b4.png)
