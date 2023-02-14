@@ -7,7 +7,7 @@
 
 # Description
 
-setup.sh script build and runing jenkins on docker via Dockerfile and Docker-compose
+the setup.sh script build and runing jenkins on docker via Dockerfile and Docker-compose
 * setup.sh script:
 ![image](https://user-images.githubusercontent.com/113102456/218678901-2e94aa89-44ac-4d4e-9f99-e0666eba381f.png)
 * Dockerfile:
