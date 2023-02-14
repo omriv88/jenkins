@@ -1,9 +1,11 @@
 
-o provide a running Jenkins server, that will initiate a python job on any github merge request
+#Jenkins
+
+# Summary:
+* provide a running Jenkins server, that will initiate a python job on any github merge request
 
 
-Des
-
+# Description
 
 setup.sh script build and runing jenkins on docker via Dockerfile and Docker-compose
 * setup.sh script:
