@@ -16,10 +16,10 @@ setup.sh script build and run Jenkins server on container, the jenkins server wi
 
 
 setup.sh script build and runing jenkins on docker via Dockerfile and Docker-compose
-setup.sh script:
-![image](https://user-images.githubusercontent.com/113102456/218678548-4cb010f4-02a9-406c-8f33-9c1070e073be.png)
-Dockerfile:
-![image](https://user-images.githubusercontent.com/113102456/218678627-890bf9de-6b62-4554-9ef2-2a59bae38c9d.png)
+*setup.sh script:
+![image](https://user-images.githubusercontent.com/113102456/218678901-2e94aa89-44ac-4d4e-9f99-e0666eba381f.png)
+*Dockerfile:
+![image](https://user-images.githubusercontent.com/113102456/218678967-64cecd7f-1dde-4f82-9ff0-d1611e6d7982.png)
 Docker-compoe file:
 ![image](https://user-images.githubusercontent.com/113102456/218678678-bf0d223e-8141-4e4c-b19f-6360a04c544a.png)
 and runing another scirpt that call tester.sh script, this script check when the jenkins url is runing and runing.
