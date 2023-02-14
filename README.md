@@ -15,7 +15,7 @@ the setup.sh script build and runing jenkins on docker via Dockerfile and Docker
 and runing another scirpt that call tester.sh:
 
 * tester.sh script:
-![image](https://user-images.githubusercontent.com/113102456/218679435-2987b905-a3f0-4dfd-90bd-9960ee227116.png)
+![image](https://user-images.githubusercontent.com/113102456/218689729-ae405c2f-7d06-4013-929e-9b9e3828c9b4.png)
 
 the tester.sh script checks when the URL of the Jenkins server is available
 and runs another script called test.sh.
