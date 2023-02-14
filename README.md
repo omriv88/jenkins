@@ -11,9 +11,7 @@
 
 
 
-setup.sh script build and run Jenkins server on container, the jenkins server will initiate a python job on any merge request via one command line
-
-
+Des
 
 setup.sh script build and runing jenkins on docker via Dockerfile and Docker-compose
 * setup.sh script:
@@ -38,14 +36,31 @@ If the Url of the jenkins server is available, the script runs another script ca
 the test.sh downloads from the Jenkins server jenkins-cli.jar file, and builds 2 jobs via XML file 
 the first job call "pull request demo1" 
 
-* pull request demo1 - Console output:
+* pull request demo1 job - Console output:
 ![image](https://user-images.githubusercontent.com/113102456/218683222-c0d7b68e-49e1-410c-951c-025efeedc49c.png)
 
 that jobs getting any pull request from github specific repository and build another job that call "pipeline"
-the pipeline jobs runing main.py script via Jenkinsfile
-script wait to receive status 200 from the Jenkis server Url in order to run the test.sh script
 
-check the jenkins Url and wait for status 200, when the jenkins url is runing, if the jenkins url is in status 200 its runing another script that call test.sh
-the test.sh script download jenkins-cli.jar file from jenkins server and build two jobs via xml file .
-the first job call "pull request demo1" that jobs getting any pull request from github specific repository and build another job that call "pipeline"
+* pipeline job - Console output:
+
+![image](https://user-images.githubusercontent.com/113102456/218683846-f273b4b3-c326-4a03-b3ab-9186d548d634.png)
+![image](https://user-images.githubusercontent.com/113102456/218683950-2ca7f3d5-2b85-4793-ba8c-33ecd42b3865.png)
+
+
 the pipeline jobs runing main.py script via Jenkinsfile
+
+* main.py
+
+![image](https://user-images.githubusercontent.com/113102456/218684193-3f582a42-1da4-4652-a50d-7574c7cebed5.png)
+
+* Jenkinsfile
+
+![image](https://user-images.githubusercontent.com/113102456/218684356-d78a4aab-736e-4f57-82d0-15494b1c831d.png)
+
+
+
+
+USe
+
+git clone
+sh setup.sh script
