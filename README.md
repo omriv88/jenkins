@@ -27,7 +27,7 @@ and runing another scirpt that call tester.sh:
 ![image](https://user-images.githubusercontent.com/113102456/218679435-2987b905-a3f0-4dfd-90bd-9960ee227116.png)
 tester.sh script checks when the URL of the Jenkins server is available
 If the Url of the jenkins server is available, the script runs another script called test.sh.
-* test.sh:
+* test.sh script:
 ![image](https://user-images.githubusercontent.com/113102456/218681595-5e83c730-8482-438e-b9a2-76eeac7bff39.png)
 the test.sh downloads from the Jenkins server jenkins-cli.jar file, and builds 2 jobs via XML file 
 the first job call "pull request demo1" 
