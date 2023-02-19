@@ -1,5 +1,5 @@
 # Summary
-* provide a running Jenkins server, that will initiate a python job on any github merge request
+* provide a running Jenkins server, that will initiate a python job on any github merge request.
 
 
 # Description
